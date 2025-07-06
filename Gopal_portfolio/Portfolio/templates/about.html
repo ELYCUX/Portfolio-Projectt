@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About Me</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* Reset and Base Styling */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(to right, #e0eafc, #cfdef3);
+            color: #333;
+            padding: 40px 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 800px;
+            background: #ffffff;
+            padding: 40px 50px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+            border-radius: 12px;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 2.8rem;
+            color: #0077cc;
+            margin-bottom: 25px;
+            position: relative;
+        }
+
+        h1::after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 4px;
+            background: #0077cc;
+            margin: 10px auto 0;
+            border-radius: 2px;
+        }
+
+        p {
+            font-size: 1.15rem;
+            line-height: 1.8;
+            margin-bottom: 20px;
+        }
+
+        strong {
+            color: #00509e;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 25px 20px;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            p {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>About Me</h1>
+        <p>Hi, I'm <strong>Gopal Krushna Panda</strong>, a passionate B.Tech student specializing in <strong>CSE - Data Science</strong> at <strong>GIET University</strong>.</p>
+        <p>I thrive on exploring the intersection of data and technology to solve real-world problems and create meaningful solutions.</p>
+        <p>My journey is marked by academic excellence, hands-on projects, and a deep curiosity for <strong>AI</strong>, <strong>Machine Learning</strong>, and the ever-evolving tech landscape.</p>
+        <p><em>Driven, curious, and always learning</em> — I’m building the future, one line of code at a time.</p>
+    </div>
+</body>
+</html>
